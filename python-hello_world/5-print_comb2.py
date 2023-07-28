@@ -1,6 +1,6 @@
 #n = range(0,100)
 for x in range(0,100):
     if x < 10:
-        print("0{},".format(x))
+        print("0{}".format(x), end=" ")
     else:
-        print("{},".format(x))
+        print("{}".format(x), end=" ")
