@@ -3,3 +3,4 @@ def add(a, b):
 add(1, 2)
 add(98, 0)
 add(100, -2)
+add(0,0)
