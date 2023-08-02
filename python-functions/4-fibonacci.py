@@ -1,6 +1,7 @@
 def fibonacci_sequence(n):
-    for i in range(0, n):
-       print(n, end = " ")
+    if n in {0, 1}:
+        return n
+    return fibonacci_sequence(n -1) + fibonacci_sequence(n -2)
 
 
 fibonacci_sequence(6)
