@@ -4,7 +4,7 @@ def fibonacci_sequence(n):
     return fibonacci_sequence(n -1) + fibonacci_sequence(n -2)
 
 
-fibonacci_sequence(6)
-fibonacci_sequence(1)
-fibonacci_sequence(0)
-fibonacci_sequence(20)
+[fibonacci_sequence(n) for n in range(6)]
+[fibonacci_sequence(n) for n in range(1)]
+[fibonacci_sequence(n) for n in range(0)]
+[fibonacci_sequence(n) for n in range(20)]
