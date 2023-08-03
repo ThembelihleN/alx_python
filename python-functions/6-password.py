@@ -5,10 +5,11 @@
     'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
 ]
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-symbols = ['!', '#', '$', '%', '@', '&', '(', ')', '*', '+' ]'''
-def validate_password(password):
-    '''characters = letters + numbers + symbols
+symbols = ['!', '#', '$', '%', '@', '&', '(', ')', '*', '+' ]
+ characters = letters + numbers + symbols
     password = " ".join(characters)'''
+def validate_password(password):
+   
     for i in range(8):
         return password
     if password.length >= 8:
