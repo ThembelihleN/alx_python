@@ -9,10 +9,9 @@ symbols = ['!', '#', '$', '%', '@', '&', '(', ')', '*', '+' ]
  characters = letters + numbers + symbols
     password = " ".join(characters)'''
 def validate_password(password):
-   
-    for i in range(8):
-        return password
-    if password.length >= 8:
+    '''for i in range(8):
+        return password'''
+    if len(password) >= 8:
         return True
     else:
         return False
