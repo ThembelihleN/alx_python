@@ -12,9 +12,13 @@ def validate_password(password):
     for i in range(8):
         return password
 
-    '''str(input(" "))
+    str(input.password(" "))
     if password.length >= 8:
-        return password
+        return True
     else:
-        return ('Incorrect characters')
-        '''
+        return False
+    
+validate_password("Password123")
+validate_password("abc123")
+validate_password("Password 123")
+validate_password("password 123")
