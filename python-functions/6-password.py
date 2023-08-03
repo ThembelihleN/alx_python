@@ -11,8 +11,6 @@ def validate_password(password):
     password = " ".join(characters)'''
     for i in range(8):
         return password
-
-    str(input.password(" "))
     if password.length >= 8:
         return True
     else:
