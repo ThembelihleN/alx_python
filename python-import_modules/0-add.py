@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    import math
+    from math import add_0
     a = 1
     b = 2
 def add(a, b):
