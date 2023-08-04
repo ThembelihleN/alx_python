@@ -1,9 +1,8 @@
-a = 1
-b = 2
 if __name__ == "__main__":
     from add_0 import add
-    
-def add(a, b):
-    print("1 + 2 = {}".format("a + b"))
+a = 1
+b = 2
 
-add(1, 2)
+print("1 + 2 = {}".format("a + b"))
+
+(1, 2)
