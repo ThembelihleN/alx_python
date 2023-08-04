@@ -1,7 +1,6 @@
-#python 3
-def add(a, b):
-   """FAKE!
-    """
-   return (a - b)
 
-    
+a = 1
+b = 2
+def add(a, b):
+    add(a + b)
+    #My addition function
