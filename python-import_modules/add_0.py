@@ -1,6 +1,9 @@
 
-a = 1
-b = 2
 def add(a, b):
-    add(a + b)
-    #My addition function
+    sum = a + b
+    return sum
+
+# calling function with two values
+result = add(5, 4)
+
+print(result)
