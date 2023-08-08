@@ -13,6 +13,7 @@ try:
 
     result = a/b
     print("Inside result: {}.".format(result))
+    
 except:
      print("Error: Denominator cannot be 0.")
 
