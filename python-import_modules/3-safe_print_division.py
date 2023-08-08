@@ -16,4 +16,4 @@ except:
 
 finally:
     result = safe_print_division(a, b)
-    print("Inside result: {} / {} = {}".format(a, b, result))
+    print("{} / {} = {}".format(a, b, result))
