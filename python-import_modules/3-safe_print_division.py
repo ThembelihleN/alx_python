@@ -12,7 +12,7 @@ try:
     b = 2
 
 except:
-    print("Error: Denominator cannot be 0.")
+    print("Inside result: None")
 
 finally:
     result = safe_print_division(a, b)
