@@ -1,6 +1,6 @@
 #Write a function that divides 2 integers and prints the result
-a = 12
-b = 2
+a = (input)
+b = (input)
 
 def safe_print_division(a, b):
     if a and b == 0:
