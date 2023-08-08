@@ -1,4 +1,6 @@
 #Write a function that divides 2 integers and prints the result
+a = 12
+b = 2
 
 def safe_print_division(a, b):
     if a and b == 0:
@@ -8,12 +10,9 @@ def safe_print_division(a, b):
     else:
         return result
 try:
-    a = 12
-    b = 2
-
     result = a/b
     print("Inside result: {}.".format(result))
-    
+
 except:
      print("Error: Denominator cannot be 0.")
 
