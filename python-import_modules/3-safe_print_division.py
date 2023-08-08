@@ -1,5 +1,5 @@
 #Write a function that divides 2 integers and prints the result
-a = (input)
+a = (input())
 b = (input)
 
 def safe_print_division(a, b):
@@ -9,6 +9,7 @@ def safe_print_division(a, b):
         return None
     else:
         return result
+    
 try:
     result = a/b
     print("Inside result: {}.".format(result))
