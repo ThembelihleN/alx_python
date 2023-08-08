@@ -7,9 +7,6 @@ def safe_print_division(a, b):
     try:
         a = 12
         b = 2
-
-        result = a/b
-        print("Inside result: {:d} / {:d} = {}".format(a, b, result))
         
     except:
         print("Error: Denominator cannot be 0.")
