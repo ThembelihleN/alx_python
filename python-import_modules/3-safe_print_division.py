@@ -12,10 +12,9 @@ try:
     b = 2
 
     result = a/b
-    print(result)
-
-except:
     print("Inside result: {}.".format(result))
+except:
+     print("Error: Denominator cannot be 0.")
 
 finally:
     result = safe_print_division(a, b)
