@@ -9,7 +9,7 @@ def safe_print_division(a, b):
         return result
 try:
     a = 12
-    b = 0
+    b = 2
 
 except:
     print("Error: Denominator cannot be 0.")
