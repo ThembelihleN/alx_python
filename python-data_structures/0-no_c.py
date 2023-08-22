@@ -6,4 +6,4 @@ def no_c(my_string):
     return new_string
 
 
-#no_c("Holberton School")
+no_c("Holberton School")
