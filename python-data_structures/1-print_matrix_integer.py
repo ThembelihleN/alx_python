@@ -1,11 +1,7 @@
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-def print_matrix_integer(matrix=[[]]):
-    for item in row:
-        for row in matrix:
-            print("{}{}{}$".format()()())
+my_list = [[1,2,3], [4,5,6], [7,8,9], [10,11,12]]
 
-print_matrix_integer(matrix)
+def print_matrix_integer(matrix=[[]]):
+    for i in my_list:
+        print("{}{}{}$".format(0)(1)(2))
+
+#print_matrix_integer(matrix)
