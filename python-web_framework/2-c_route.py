@@ -6,9 +6,9 @@ It has a small and easy-to-extend core: it is a microframework that doesn’t in
 '''
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/c/<text>")
 def hello():
-    return "Hello HBNB!"
+    return "C"
 
 
 if __name__ == '__main__':
