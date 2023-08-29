@@ -18,18 +18,18 @@ def hello():
 
 @app.route("/hbnb")
 def hbnb():
+    """
+    This is a function that returns a specified string when routing to /hbnb
+    """
     return "HBNB"
 
-
 @app.route("/c/<text>")
-def hbnb():
-    return "C"
-
-@app.route("/python/<text>")
-def hbnb():
-    return "is cool"
-
-
+def hbnb(text):
+    """
+    Thi sfunction returns the specified string when routing to /c showing
+    the text in that directory
+    """
+    return f'C {escape(text)}'
 
 if __name__ == '__main__':
     app.run(debug=True)

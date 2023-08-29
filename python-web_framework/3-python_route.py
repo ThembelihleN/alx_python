@@ -18,6 +18,9 @@ def hello():
 
 @app.route("/hbnb")
 def hbnb():
+    """
+    This is a function that returns a specified string when routing to /hbnb
+    """
     return "HBNB"
 
 
