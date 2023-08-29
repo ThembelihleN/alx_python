@@ -25,11 +25,6 @@ def hbnb():
 def hbnb():
     return "C"
 
-@app.route("/python/<text>")
-def hbnb():
-    return "is cool"
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
