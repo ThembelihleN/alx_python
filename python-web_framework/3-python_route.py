@@ -38,7 +38,7 @@ def c_is_fun(text):
     """
     return f"C {escape(text)}"
 
-@app.route("/python/", defaults={"is cool"})
+@app.route("/python/", defaults={"text"})
 @app.route("/python/<text>")
 def pyhton_is_cool(text):
     return f"Python <text>"
