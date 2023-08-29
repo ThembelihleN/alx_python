@@ -32,7 +32,6 @@ def hbnb():
 
 @app.route("/c/<text>")
 def c_is_fun(text):
-    text.replace("_", " ")
     """
     Thi sfunction returns the specified string when routing to /c showing
     the text in that directory

@@ -2,7 +2,7 @@
 Flask is a Python module that lets you develop web applications
 easily.
 """
-from flask import Flask
+from flask import Flask, request
 """
 The escape function is used for safely escaping HTML and other
 special characters in order to prevent cross-site scripting (XSS)
@@ -32,7 +32,6 @@ def hbnb():
 
 @app.route("/c/<text>")
 def c_is_fun(text):
-    text.replace("_", " ")
     """
     Thi sfunction returns the specified string when routing to /c showing
     the text in that directory
