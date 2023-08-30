@@ -45,7 +45,7 @@ def python_is_cool(text="is cool"):
     """
     Templates can be used to generate any type of text file.
     """
-    return f"Python <text>"
+    return f"Python " + text
 
 if __name__ == '__main__':
     app.run(debug=True)
