@@ -3,6 +3,14 @@ Flask is a Python module that lets you develop web applications
 easily.
 """
 from flask import Flask
+from flask import render_template
+"""
+The escape function is used for safely escaping HTML and other
+special characters in order to prevent cross-site scripting (XSS)
+attacks and ensure that user-generated content is displayed as
+plain text rather than being interpreted as HTML or script code.
+"""
+from markupsafe import escape
 
 app = Flask(__name__)
 """
@@ -18,13 +26,26 @@ def hello():
 
 @app.route("/hbnb")
 def hbnb():
+    """
+    This is a function that returns a specified string when routing to /hbnb
+    """
     return "HBNB"
 
-
 @app.route("/c/<text>")
-def hbnb():
-    return "C"
+def c_is_fun(text):
+    """
+    Thi sfunction returns the specified string when routing to /c showing
+    the text in that directory
+    """
+    return f"C " + text.replace('_', ' ')
 
+@app.route("/python/")
+@app.route("/python/<text>")
+def python_is_cool(text="is cool"):
+    """
+    Templates can be used to generate any type of text file.
+    """
+    return f"Python <text>"
 
 if __name__ == '__main__':
     app.run(debug=True)
