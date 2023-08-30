@@ -36,7 +36,7 @@ def c_is_fun(text):
     Thi sfunction returns the specified string when routing to /c showing
     the text in that directory
     """
-    return f"C {escape(text)}"
+    return f"C " + text.replace('_', ' ')
 
 if __name__ == '__main__':
     app.run(debug=True)
