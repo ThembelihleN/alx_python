@@ -53,9 +53,9 @@ def is_a_num(n):
 
 @app.route("/number_template/<int:n>", strict_slashes= False)
 def number_template(n):
-    return render_template("templates/5-number.html")
+    return render_template("templates/5-number.html", n=n)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
 
