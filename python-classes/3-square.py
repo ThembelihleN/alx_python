@@ -6,7 +6,7 @@ class Square:
     A class is a blueprint or a template for creating objects (instances)
     """ 
     def __init__(self, size = 0):
-        self.__size
+        self.__size = size
 
     @property
     def size(self):
