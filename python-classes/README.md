@@ -1,0 +1,1 @@
+Object-Oriented Programming (OOP) is a programming paradigm that organizes code into reusable and self-contained objects, which are instances of classes. Python is an object-oriented programming language, and it supports OOP principles
