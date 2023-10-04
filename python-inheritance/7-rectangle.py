@@ -34,24 +34,29 @@ class BaseGeometry(metaclass=BaseMetaClass):
         """
         self.name = name
         self.value = value
-        
         if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
-        
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
+            
 
-"""
-Rectangle class.
-Method:
-    __init__: initialize.
-"""
 class Rectangle(BaseGeometry):
     """
-    __init__: initialize
+    Rectangle class
     """
     def __init__(self, width, height):
+        """
+        attributes:
+            width: int
+            height: int
+        """
         self.__width = width
         self.__height = height
-        self.integer_validator("width", self.__width)
-        self.integer_validator("height", self.__height)
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+
+    def area(self):
+        return self.__width * self.__height
+
+    def __str__(self):
+        return ("[Rectangle] {}/{}".format(self.__width, self.__height))
