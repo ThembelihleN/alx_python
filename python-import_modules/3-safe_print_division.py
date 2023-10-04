@@ -1,14 +1,22 @@
 #Write a function that divides 2 integers and prints the resuts.
-a = 12
-b = 2
+#a = 12
+#b = 2
 
 def safe_print_division(a, b):
-    if a and b == 0:
+    try:
+        result = a / b
+    except ZeroDivisionError:
+        result = None
+    finally:
+        print("Inside result: {}".format(result))
+    return result
+    """if a and b == 0:
         return None
     elif a or b == 0:
         return None
     else:
         return result
+    
     
 try:
     result = a/b
@@ -20,3 +28,5 @@ except:
 finally:
     result = safe_print_division(a, b)
     print("{} / {} = {}".format(a, b, result))
+
+"""
