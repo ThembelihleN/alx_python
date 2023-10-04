@@ -2,7 +2,7 @@
 module description
 """
 
-def is_same_class(obj, a_class):
+def inherits_from(obj, a_class):
     """
     function description
     """
