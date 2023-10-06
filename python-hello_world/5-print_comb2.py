@@ -1,8 +1,8 @@
-#n = range(0,100)
+#n = range(100)
 
-for x in range(100):
-    if x == 99:
-        print("{:02d},".format(x), end="\n")
+for i in range(100):
+    if i == 99:
+        print("{:02d}".format(i), end="\n")
     else:
-        print("{:02d},".format(x), end=", ")
+        print("{:02d}".format(i), end=", ")
 
