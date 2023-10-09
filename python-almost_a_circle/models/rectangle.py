@@ -1,95 +1,93 @@
 """
-Module documentation
+Rectangle Class:
+Inherits from Base class.
 """
-from base import Base
+from models.base import Base
 
 class Rectangle(Base):
     """
-    class documentation
+    A class representing a rectangle.
+
+    Attributes:
+        width (int): The width of the rectangle.
+        height (int): The height of the rectangle.
+        x (int): The x-coordinate position of the rectangle.
+        y (int): The y-coordinate position of the rectangle.
     """
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initialize the Rectangle instance with specified attributes.
+
+        Args:
+            width (int): The width of the rectangle.
+            height (int): The height of the rectangle.
+            x (int, optional): The x-coordinate position of the rectangle. Default is 0.
+            y (int, optional): The y-coordinate position of the rectangle. Default is 0.
+            id (int, optional): The unique identifier. Inherits from Base class.
         """
         super().__init__(id)
-        if type(width) is not int:
-            raise TypeError("width must be an integer")
-        elif width <= 0:
-            raise ValueError("width must be > 0")
-        else:
-            self.__width = width
-        if type(height) is not int:
-            raise TypeError("height must be an integer")
-        elif height <= 0:
-            raise ValueError("height must be > 0")
-        else:
-            self.__height = height
-            
-
-        """
-        arguments documentation
-        """
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
-
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
+    
     @property
     def width(self):
-      """
-      getter documentation
-      """
-      return self.__width
+        """Get the width of the rectangle."""
+        return self.__width
     
     @width.setter
-    def width(self, value):
-       """"
-       setter documentation
-       """
-       self.__width = value
-
+    def width(self, new_width):
+        """Set the width of the rectangle. Validates width."""
+        if not isinstance(new_width, int):
+            raise TypeError("width must be an integer")
+        if new_width <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = new_width
+    
     @property
     def height(self):
-        """
-        getter documentation
-        """
+        """Get the height of the rectangle."""
         return self.__height
-
+    
     @height.setter
-    def height(self, value):
-        """"
-        setter documentation
-        """
-        self.__height = value
-
+    def height(self, new_height):
+        """Set the height of the rectangle. Validates height."""
+        if not isinstance(new_height, int):
+            raise TypeError("height must be an integer")
+        if new_height <= 0:
+            raise ValueError("height must be > 0")
+        self.__height = new_height
+    
     @property
     def x(self):
-      """
-      getter documentation
-      """
-      return self.__x
+        """Get the x-coordinate position of the rectangle."""
+        return self.__x
     
-    @width.setter
-    def x(self, value):
-       """"
-       setter documentation
-       """
-       self.__x = value
-
+    @x.setter
+    def x(self, new_x):
+        """Set the x-coordinate position of the rectangle. Validates x."""
+        if not isinstance(new_x, int):
+            raise TypeError("x must be an integer")
+        if new_x < 0:
+            raise ValueError("x must be >= 0")
+        self.__x = new_x
+    
     @property
     def y(self):
-      """
-      getter documentation
-      """
-      return self.__y
+        """Get the y-coordinate position of the rectangle."""
+        return self.__y
     
-    @width.setter
-    def y(self, value):
-       """"
-       setter documentation
-       """
-       self.__y = value
-
+    @y.setter
+    def y(self, new_y):
+        """Set the y-coordinate position of the rectangle. Validates y."""
+        if not isinstance(new_y, int):
+            raise TypeError("y must be an integer")
+        if new_y < 0:
+            raise ValueError("y must be >= 0")
+        self.__y = new_y
+    
     def area(self):
         """Area method: returns width * height"""
         return self.__width * self.__height
@@ -116,9 +114,8 @@ class Rectangle(Base):
         if args and len(args) > 3:
             self.x = args[3]
         if args and len(args) > 4:
-             self.y = args[4]
+            self.y = args[4]
         
-        """Another documentation"""
         for key, value in kwargs.items():
             if key == "id":
                 self.id = value
