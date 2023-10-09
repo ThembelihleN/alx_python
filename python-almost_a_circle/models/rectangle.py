@@ -8,13 +8,16 @@ class Rectangle(Base):
     class documentation
     """
     def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        Initialize the Rectangle instance with specified attributes.
+        """
         super().__init__(id)
         if type(width) is not int:
-           raise TypeError("width must be an integer")
+            raise TypeError("width must be an integer")
         elif width <= 0:
-           raise ValueError("width must be > 0")
+            raise ValueError("width must be > 0")
         else:
-           self.__width = width
+            self.__width = width
         if type(height) is not int:
             raise TypeError("height must be an integer")
         elif height <= 0:
@@ -23,7 +26,9 @@ class Rectangle(Base):
             self.__height = height
             
 
-
+        """
+        arguments documentation
+        """
         self.__width = width
         self.__height = height
         self.__x = x
@@ -113,6 +118,7 @@ class Rectangle(Base):
         if args and len(args) > 4:
              self.y = args[4]
         
+        """Another documentation"""
         for key, value in kwargs.items():
             if key == "id":
                 self.id = value
